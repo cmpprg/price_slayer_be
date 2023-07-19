@@ -24,14 +24,16 @@ plants = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10]
 plants.each do |plant|
   PlantVendor.create(plant: plant, vendor: v1, price: Faker::Number.decimal(
     l_digits: Faker::Number.between(from: 1, to: 10),
-    r_digits: 2)
-  )
+    r_digits: 2
+  ))
+
   PlantVendor.create(plant: plant, vendor: v2, price: Faker::Number.decimal(
     l_digits: Faker::Number.between(from: 1, to: 10),
-    r_digits: 2)
-  )
+    r_digits: 2
+  ))
+
   PlantVendor.create(plant: plant, vendor: v3, price: Faker::Number.decimal(
     l_digits: Faker::Number.between(from: 1, to: 10),
-    r_digits: 2)
-  )
+    r_digits: 2
+  ))
 end
